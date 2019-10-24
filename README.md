@@ -8,6 +8,9 @@ The code makes use of `networkx`, `numpy`, `scipy`, and `matplotlib`. Quick inst
 
 ```pip install -r requirements.txt```
 
+If you wish to also run `data_analysis.py`, please also install the optional `tabulate` package via
+```pip install tabulate```
+
 ## Usage
 To generate an equivalent SWAP-compliant circuit for a given example circuit, run the command
 ```
