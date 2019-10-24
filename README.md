@@ -13,9 +13,9 @@ To generate an equivalent SWAP-compliant circuit for a given example circuit, ru
 ```
 python3 main.py <filename> <benchmark_folder> <result_folder>
 ```
-For example, if you have the benchmark `3_17_13.qasm` in `examples` and wish to output the results into a folder `results`, run
+For example, if you have the benchmark `3_17_13.qasm` in `examples` and wish to output the results into a folder `compliant_circuits`, run
 ```
-python3 main.py 3_17_13.qasm examples results
+python3 main.py 3_17_13.qasm examples compliant_circuits
 ```
 
 Note that the input file is to be given in OpenQASM format and should only contain single- or two-qubit gates. 
