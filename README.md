@@ -28,7 +28,7 @@ sh run_all_files.sh <benchmark_list> <benchmark_folder> <compliant_circuit_outpu
 ```
 For example, using our given example benchmarks in `examples` and a list of benchamrks to run, as in `filenames.txt`, running
 ```
-sh run_all_files.sh filesnames.txt examples compliant_circuits summary.txt
+sh run_all_files.sh filenames.txt examples compliant_circuits summary.txt
 ```
 will run our algorithm on the list of benchmarks, give the set of compliant circuits generated for each benchmark in `compliant_circuits`, and summarize the time and best swap count for each benchmark.
 
