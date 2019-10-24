@@ -13,9 +13,9 @@ To generate an equivalent SWAP-compliant circuit for a given example circuit, ru
 ```
 python3 main.py <filename> <benchmark_folder> <result_folder>
 ```
-For example, if you have a benchmark in `benchmarks/example.qasm` and wish to output the results into a folder `results`, run
+For example, if you have the benchmark `3_17_13.qasm` in `examples` and wish to output the results into a folder `results`, run
 ```
-python3 main.py example.qasm benchmarks results
+python3 main.py 3_17_13.qasm examples results
 ```
 
 Note that the input file is to be given in OpenQASM format and should only contain single- or two-qubit gates. 
@@ -33,7 +33,12 @@ sh run_all_files.sh filenames.txt examples compliant_circuits summary.txt
 will run our algorithm on the list of benchmarks, give the set of compliant circuits generated for each benchmark in `compliant_circuits`, and summarize the time and best swap count for each benchmark.
 
 ## Data Analysis
-We have also added some data analysis scripts that we used in our paper to compare several algorithms. This requires having previously run other algorithms and summarizing them into files with the same format as those produced by `run_all_files.sh`. The summary files used in the paper can be found in the `results/summary` folder. 
+We have also a data analysis script that we used in our paper to generate graphs and tables comparing several algorithms. This may be run via the command
+```
+python3 data_analysis.py
+```
+
+This requires having previously run other algorithms and summarizing them into files with the same format as those produced by `run_all_files.sh`. The summary files used in the paper can be found in the `results/summary` folder. 
 
 Note that to run the table generation, the `tabulate` python package must be installed, e.g. via `pip install tabulate`.
 
